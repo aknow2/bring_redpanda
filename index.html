@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bring redpanda</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Score: <span id="score"></span></div>
+    <canvas id="game" width="1000" height="640"></canvas>
+    <script src="main.js"></script>
+    <h1>ゲームの操作方法</h1>
+    <h2>キーボード操作</h2>
+    <ul>
+        <li>上矢印キー: プレイヤーを上に移動</li>
+        <li>下矢印キー: プレイヤーを下に移動</li>
+        <li>左矢印キー: プレイヤーを左に移動</li>
+        <li>右矢印キー: プレイヤーを右に移動</li>
+    </ul>
+
+    <h2>タッチスクリーン操作</h2>
+    <ul>
+        <li>上へスワイプ: プレイヤーを上に移動</li>
+        <li>下へスワイプ: プレイヤーを下に移動</li>
+        <li>左へスワイプ: プレイヤーを左に移動</li>
+        <li>右へスワイプ: プレイヤーを右に移動</li>
+    </ul>
+
+    <h1>スコアの算出方法</h1>
+    <ul>
+        <li>アイテムを拾う: プレイヤーがアイテムに接触すると、スコアが1ポイント加算されます。</li>
+        <li>家に到達する: プレイヤーが家に到達すると、スコアが加算されます。具体的には、プレイヤーのボディサイズの二乗を2で割った値がスコアに加算されます。</li>
+    </ul>
+
+
+  </body>
+</html>
