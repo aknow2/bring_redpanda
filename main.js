@@ -138,6 +138,7 @@ function gameOver() {
 }
 
 document.addEventListener('keydown', (e) => {
+    e.preventDefault();
     if (e.key === 'ArrowUp') {
         player.dx = 0;
         player.dy = -1;
